@@ -20,6 +20,19 @@ program
  
    });
 
+   program
+  .command('lakers <password>')
+   .description('List the lakers starting 5') 
+
+//   .option('-k, --key <string>', 'String|phrase Key to Use')
+  .action(function (password, options) {
+    console.log("")
+    console.log(colors.yellow('   Extra Help Text'));
+    console.log("") 
+
+ 
+   });
+
 program.on('--help', function(){
     console.log();
     console.log('Extra Help Text');
