@@ -28,13 +28,14 @@ program
 //   .option('-k, --key <string>', 'String|phrase Key to Use')
   .action(function (roster, options) {
     console.log("")
-    console.log(colors.yellow('   Extra Help Text'));
+    console.log(colors.yellow(' Welcome to the Los Angelos Lakers Roster'));
     console.log("") 
 console.log(
   table([
     ['Name', 'Position','Jersey #'],
     ['Lebron James', 'Small Forward','1'],
-    ['Anthony Davis', 'Power Forward','2'] 
+    ['Anthony Davis', 'Power Forward','2'],
+    ['Dennis Schroder','Point Guard', '3']
   ])
 
 )
