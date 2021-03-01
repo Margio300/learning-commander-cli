@@ -33,15 +33,41 @@ program
 console.log(
   table([
     ['Name', 'Position','Jersey #'],
-    ['Lebron James', 'Small Forward','1'],
-    ['Anthony Davis', 'Power Forward','2'],
-    ['Dennis Schroder','Point Guard', '3']
+    ['L.James', 'Small Forward','23'],
+    ['A.Davis', 'Power Forward','3'],
+    ['D.Schroder','Point Guard', '17'],
+    ['K.Caldwell-Pope','Shooting Guard', '1'],
+    ['M.Gasol','Center', '14',]
   ])
 
 )
  
    });
 
+
+
+   program
+   .command('season <scoring>')
+    .description('Tells points,assist and rebounding for career') 
+ 
+ //   .option('-k, --key <string>', 'String|phrase Key to Use')
+   .action(function (roster, options) {
+     console.log("")
+     console.log(colors.yellow(' The Defending Champions stats for the 2020-2021 Season'));
+     console.log("") 
+ console.log(
+   table([
+     ['Name', 'PPG','Assist', "Rebounding"],
+     ['L.James', '28.6','9.0','8.0'],
+     ['A.Davis', '29.9','5.2','9.0'],
+     ['D.Schroder','13.4', '6.1','2.0'],
+     ['K.Caldwekk-Pope','8.3', '1.2','1.2'],
+     ['M.Gasol','4.5', '3.0','6.0']
+   ])
+ 
+ )
+  
+    });
 program.on('--help', function(){
     console.log();
     console.log('Extra Help Text');
