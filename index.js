@@ -41,7 +41,7 @@ console.log(
   ])
 
 )
- 
+console.log("") 
    });
 
 
@@ -66,7 +66,8 @@ console.log(
    ])
  
  )
-  
+ console.log("") 
+ 
     });
 program.on('--help', function(){
     console.log();
@@ -99,46 +100,4 @@ program.on('--help', function(){
 
 
 
-   program
-  .command('lakers <password>')
-   .description('List the lakers starting 5') 
-
-//   .option('-k, --key <string>', 'String|phrase Key to Use')
-  .action(function (password, options) {
-    console.log("")
-    console.log(colors.yellow('   Extra Help Text'));
-    console.log("") 
-
- 
-   });
-
-program.on('--help', function(){
-    console.log();
-    console.log('Extra Help Text');
-    console.log('');
-    console.log('');
-    console.log('');
-  });
-
-
-// program.on('--help', function(){
-//     console.log();
-//     console.log('Examples:');
-//     console.log('');
-//     console.log('  $ pass encrypt mypassword -k oneWordPass');
-//     console.log("  $ pass encrypt 'mypassword' -k 'Phrase to encrypt words' ");
-//     console.log('');
-//     console.log('  $ pass decrypt encryptedstring -k oneWordPass');
-//     console.log("  $ pass decrypt 'encryptedstring' -k 'Phrase to encrypt words' ");
-//     console.log('');
-//     console.log('Notice: ')
-//     console.log('  For special characters in passwords/keys,');
-//     console.log('  please use single quotes around each');
-//     console.log('');
-//     console.log('');
-//   });
-
-
-  program.parse(process.argv);
-
-  if (!program.args.length) program.help();
+  
