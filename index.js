@@ -12,17 +12,10 @@ program
   .usage(' ');
   //.usage('encrypt|decrypt <password> <options>');
   
-   program
-  .command('encrypt <password>')
-   .description('Encrypt a plain text password')
-//   .option('-k, --key <string>', 'String|phrase Key to Use')
-  .action(function (password, options) {
-    console.log('Extra Help Text');
- 
-   });
+   
 
    program
-  .command('lakers <roster>')
+  .command('roster')
    .description('List the lakers starting 5') 
 
 //   .option('-k, --key <string>', 'String|phrase Key to Use')
@@ -47,7 +40,7 @@ console.log("")
 
 
    program
-   .command('season <scoring>')
+   .command('season')
     .description('Tells points,assist and rebounding for career') 
  
  //   .option('-k, --key <string>', 'String|phrase Key to Use')
