@@ -1,4 +1,4 @@
-# margio300app-cli
+# lakers-cli
 
 This is a description of my project 
 
@@ -7,7 +7,7 @@ This is a description of my project
 
 Run the following command to install this app.
 
-npm install -g margio300app
+npm install -g lakers-cli
 
 ## Usage
 
@@ -15,6 +15,6 @@ npm install -g margio300app
 
 Displays the lakers roster 
 
-### season scoring
+### lakers season
 
 Displays the starting 5 stats
